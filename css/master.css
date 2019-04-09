@@ -1,1 +1,43 @@
-body{}
+.wrapper{
+  width: auto;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  height: 5000px;
+  border: 1px solid red;
+}
+
+.red-bg{
+  background-color: red;
+}
+.teste{
+  border: 1px solid green;
+}
+
+.list {
+  text-align: center;
+}
+.list a{
+  display: inline-block;
+  padding: 0 15px;
+  margin: 15px 0;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.list a:hover{
+  color: red;
+}
+
+.header input{
+  width: 70px;
+  display: inline-block;
+}
+
+.blank{
+  display: inline-block;
+  border-left: 13px solid white;
+  border-top: 13px solid red;
+}

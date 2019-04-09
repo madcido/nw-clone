@@ -1,43 +1,124 @@
+.teste{
+  border: 1px solid green;
+}
+
+body{
+  background-color: #f4f5f6;
+}
+
 .wrapper{
   width: auto;
   max-width: 1300px;
   margin: 0 auto;
 
   height: 5000px;
-  border: 1px solid red;
+}
+
+.navbar{
+  display: none;
+}
+
+.header{
+  border-bottom: 2px solid #f4f5f6;
 }
 
 .red-bg{
   background-color: red;
 }
-.teste{
-  border: 1px solid green;
+
+.white-bg{
+  background-color: white;
+}
+
+.date{
+  color: white;
+  font-size: 14px;
+}
+
+.logo{
+  height: 100px;
+}
+
+.sign-subs{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sign-subs p{
+  float: right;
+  padding: 5px 10px;
+}
+
+.sign{
+  color: white;
+}
+
+.subs{
+  color: red;
+  background-color: white;
 }
 
 .list {
   text-align: center;
 }
+
 .list a{
-  display: inline-block;
-  padding: 0 15px;
+  display: block;
+  white-space: nowrap;
   margin: 15px 0;
   text-decoration: none;
   color: black;
   font-size: 16px;
   font-weight: bold;
+  border-right: 1px solid silver;
 }
 
 .list a:hover{
   color: red;
 }
 
-.header input{
-  width: 70px;
-  display: inline-block;
+.search-box{
+  background-image: url(../images/magnifier.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 25%;
+}
+
+.search-box input{
+  width: 60px;
+  margin: 14px 0;
+  border: none;
+  background-color: transparent;
 }
 
 .blank{
-  display: inline-block;
   border-left: 13px solid white;
   border-top: 13px solid red;
+}
+
+.main{
+  background-color: white;
+}
+
+.articles-ctn h3{
+  color: gray;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+
+
+
+@media (max-width:1000px){
+  .white-bg, .date-ctn{
+    display: none;
+  }
+  .logo{
+    height: 40px;
+  }
+  .sign-subs p{
+    margin: 6px 0;
+    font-size: 12px;
+  }
 }

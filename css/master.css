@@ -10,8 +10,6 @@ body{
   width: auto;
   max-width: 1300px;
   margin: 0 auto;
-
-  height: 5000px;
 }
 
 .navbar{
@@ -61,6 +59,35 @@ body{
 
 .menu{
   display: none;
+  border: 1px solid red;
+}
+
+.pop{
+  display: none;
+  position: absolute;
+  top: 42px;
+  right: 0;
+  background-color: white;
+  box-shadow: -1px 0 2px silver;
+}
+
+.pop a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pop a:hover{
+  background-color: black;
+  color: white;
+}
+
+.menu:hover .pop{
+  display: block;
 }
 
 .list {
@@ -73,7 +100,7 @@ body{
   margin: 15px 0;
   text-decoration: none;
   color: black;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   border-right: 1px solid silver;
 }
@@ -82,18 +109,16 @@ body{
   color: red;
 }
 
-.search-box{
-  background-image: url(../images/magnifier.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 25%;
-}
-
 .search-box input{
   width: 60px;
   margin: 14px 0;
   border: none;
   background-color: transparent;
+  padding: 0 5px;
+}
+
+.search-box img{
+  width: 25px;
 }
 
 .blank{
@@ -103,39 +128,54 @@ body{
 
 .main{
   background-color: white;
+  padding-bottom: 10px;
 }
 
-.articles-ctn h3{
+.main h4{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.main h3{
   color: gray;
   font-size: 16px;
   font-weight: bold;
   margin: 20px 0 10px 0;
 }
 
-.articles-ctn h2{
+.main h2{
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
 }
 
-.articles-ctn h4{
-  font-size: 14px;
+.main h1{
+  color: #333;
+  font-size: 18px;
   font-weight: bold;
   margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid silver;
+  text-align: center;
 }
 
-.articles-ctn p{
+.main p{
   font-size: 14px;
   margin: 0;
 }
 
-.articles-ctn a{
+.main a{
   color: black;
   text-decoration: none;
 }
 
-.articles-ctn a:hover{
+.main a:hover{
   color: red;
+}
+
+.article{
+  margin: 10px 0;
 }
 
 .article img{
@@ -176,12 +216,81 @@ body{
   font-weight: bold;
 }
 
+.footer{
+  background-color: white;
+  border-top: 2px solid #f4f5f6;
+}
+
+.footer-top{
+  margin: 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid silver;
+}
+
+.footer-bot{
+  margin: 0 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.footer img{
+  width: 150px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+
+.footer-top p{
+  display: inline-block;
+  margin: 0;
+  font-size: 13px;
+  color: gray;
+  margin-left: 5px;
+  padding-top: 5px;
+}
+
+.footer-top a{
+  padding-top: 10px;
+  color: gray;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.footer-top a:hover{
+  color: red;
+}
+
+.footer-bot a{
+  color: gray;
+  font-size: 13px;
+  padding: 0 10px;
+  border-right: 1px solid silver;
+}
+
+.footer-bot a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.footer-bot p{
+  display: inline-block;
+  margin: 0;
+  font-size: 13px;
+  color: gray;
+}
 
 
+/* MEDIAS */
 
-@media (max-width: 1000px){
+@media (max-width: 991px){
   .white-bg, .date-ctn{
     display: none;
+  }
+  .red-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
   }
   .logo{
     height: 40px;
@@ -192,6 +301,8 @@ body{
   }
   .menu{
     display: inline-block;
+  }
+  .menu img{
     height: 20px;
     margin: 10px;
     filter: brightness(100);
@@ -199,7 +310,7 @@ body{
 }
 
 @media (max-width: 520px){
-  .sign-subs p{
+  .sign-subs p.sign, .sign-subs p.subs{
     display: none;
   }
 }

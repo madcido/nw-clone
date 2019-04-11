@@ -22,6 +22,7 @@ body{
 
 .red-bg{
   background-color: red;
+  position: relative;
 }
 
 .white-bg{
@@ -35,6 +36,14 @@ body{
 
 .logo{
   height: 100px;
+}
+
+.mini-logo{
+  height: 40px;
+  display: none;
+  position: absolute;
+  top: -41px;
+  clip: rect(0px,40px,40px,0px);
 }
 
 .sign-subs{
@@ -309,8 +318,15 @@ body{
   }
 }
 
-@media (max-width: 520px){
-  .sign-subs p.sign, .sign-subs p.subs{
+@media (max-width: 440px){
+  .sign-subs{
+    padding-left: 0;
+  }
+  .mini-logo{
+    display: block;
+    padding-right: 0;
+  }
+  .logo{
     display: none;
   }
 }

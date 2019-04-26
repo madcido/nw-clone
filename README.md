@@ -2,7 +2,7 @@ Microverse HTML/CSS project: Building with Bootstrap
 
 Project specification: clone the Newsweek webpage
 
-Author: Fabio Carmo
+Author: <a href="https://github.com/madcido">Fabio Carmo</a>
 
 Original Page: https://www.newsweek.com/
 
